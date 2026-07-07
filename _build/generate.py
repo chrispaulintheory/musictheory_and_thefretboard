@@ -105,7 +105,39 @@ def resolve_image(src: str, depth: str = "..") -> Optional[str]:
 
     if src.startswith("http://") or src.startswith("https://"):
         # Remote image — extract basename, strip resize suffix
-        raw_basename = src.split("/")[-1]
+        raw_basename = urllib.parse.unquote(src.split("/")[-1])
+
+        # Prefer a local copy if one exists (e.g. images extracted from the
+        # print PDF). Check the exact basename first, then the resize-stripped
+        # name. On-disk files may use spaces, narrow no-break spaces, or
+        # underscores interchangeably, so try every spelling.
+        for cand in (raw_basename, strip_resize_suffix(raw_basename)):
+            norm = normalize_filename(cand)  # web-facing name (underscores)
+            name_variants = {cand, norm, cand.replace(" ", NNBSP), cand.replace(NNBSP, " ")}
+            # Already-copied web asset?
+            if (ASSETS_IMG / norm).exists():
+                _download_cache[cache_key] = norm
+                return f"{depth}/assets/img/{norm}"
+            # Source file present under any spelling (in assets/img or ROOT)?
+            found = None
+            for variant in name_variants:
+                for base in (ASSETS_IMG, ROOT):
+                    p = base / variant
+                    if p.exists():
+                        found = p
+                        break
+                if found:
+                    break
+            if found is None:
+                found = find_local_image(cand)
+            if found is not None:
+                dest = ASSETS_IMG / norm
+                if not dest.exists():
+                    ASSETS_IMG.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(found, dest)
+                _download_cache[cache_key] = norm
+                return f"{depth}/assets/img/{norm}"
+
         local_name = normalize_filename(strip_resize_suffix(raw_basename))
         dest = ASSETS_IMG / local_name
         if not dest.exists():

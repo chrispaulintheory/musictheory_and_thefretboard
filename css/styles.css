@@ -43,6 +43,7 @@
   --part-iii-color: #8B3BAB;
   --part-iv-color: #2A8A5A;
   --part-v-color: #C94040;
+  --part-vi-color: #B89A1A;
 
   /* Rainbow scale degrees */
   --deg-1: #E84040;
@@ -242,6 +243,7 @@ body {
 .sidebar-part.part-iii .part-num { background: var(--part-iii-color); color: white; }
 .sidebar-part.part-iv .part-num { background: var(--part-iv-color); color: white; }
 .sidebar-part.part-v .part-num { background: var(--part-v-color); color: white; }
+.sidebar-part.part-vi .part-num { background: var(--part-vi-color); color: white; }
 .sidebar-part.front-matter .part-num,
 .sidebar-part.back-matter .part-num { background: var(--ink-faint); color: white; }
 
@@ -551,6 +553,139 @@ body {
   transform: scale(1.005);
 }
 
+/* ─── Figure captions ────────────────────────────────────────── */
+/* Pull the caption tight under its image so it reads as a caption, not a
+   separate block. The default img has a bottom margin; drop it when a
+   caption follows. */
+.chapter-body figure > img {
+  margin-bottom: 0;
+}
+
+.chapter-body figcaption {
+  margin-top: 0;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+
+/* ─── Figure numbering ───────────────────────────────────────── */
+/* Figures are auto-numbered per page with a CSS counter, so chapters can
+   be reordered and figures inserted without renumbering by hand. A caption
+   opts in by opening with an empty <span class="fig-label"></span>. */
+.chapter-body { counter-reset: fig; }
+.chapter-body figure { counter-increment: fig; }
+
+.chapter-body .fig-label::after {
+  content: "Figure " counter(fig) ".";
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.chapter-body figcaption > .fig-label { margin-right: 0.45em; }
+
+/* Legend caption: explains the connector lines in a diagram, mirroring
+   their stroke styles with small inline-SVG swatches. The negative top
+   margin tucks the box up into the diagram's internal bottom whitespace
+   so it reads as a caption, not a detached block. */
+.chapter-body figcaption.line-legend {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  max-width: 100%;
+  margin-top: 0;
+  padding: 0 var(--space-16);
+  border: 1px solid var(--paper-darker);
+  border-radius: var(--radius);
+  background: var(--paper-dark);
+}
+
+.chapter-body figcaption.line-legend .line-legend-intro {
+  font-style: italic;
+}
+
+.chapter-body figcaption.line-legend .line-legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2) var(--space-6);
+}
+
+.chapter-body figcaption.line-legend .line-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+}
+
+.chapter-body figcaption.line-legend .line-legend-swatch {
+  flex: 0 0 auto;
+}
+
+.chapter-body figcaption.line-legend strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ─── Media rows (image beside text) ─────────────────────────── */
+/* A figure sat alongside a block of text rather than stacked above
+   or below it. Add `.reverse` to flip the image to the other side. */
+.chapter-body .media-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  margin: var(--space-10) 0;
+}
+
+.chapter-body .media-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.chapter-body .media-row > .media-figure {
+  flex: 0 0 auto;
+  max-width: 42%;
+  margin: 0;
+}
+
+/* Image-dominant variant: for wide, detail-rich figures (e.g. waveform
+   comparisons) that need room. The figure takes the larger share and the
+   text sits in a narrower column beside it. */
+.chapter-body .media-row.media-wide > .media-figure {
+  max-width: 58%;
+}
+
+.chapter-body .media-row > .media-figure img {
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+}
+
+.chapter-body .media-row > .media-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* The text block manages its own internal spacing; don't let the
+   first paragraph push away from the top of the row. */
+.chapter-body .media-row > .media-text > :first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .chapter-body .media-row,
+  .chapter-body .media-row.reverse {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-4);
+  }
+
+  .chapter-body .media-row > .media-figure,
+  .chapter-body .media-row.media-wide > .media-figure {
+    max-width: 100%;
+    align-self: center;
+  }
+}
+
 /* ─── Tables ─────────────────────────────────────────────────── */
 .chapter-body table {
   border-collapse: collapse;
@@ -584,6 +719,15 @@ body {
 /* Table wrapper for horizontal scroll */
 .chapter-body table {
   max-width: 100%;
+}
+
+/* Center a table horizontally and shrink it to its content */
+.chapter-body table.table-center {
+  display: table;
+  width: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ─── Student Assignment callout boxes ───────────────────────── */
