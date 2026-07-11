@@ -222,6 +222,7 @@
 .part-card.part-iii::before { background: var(--part-iii-color); }
 .part-card.part-iv::before { background: var(--part-iv-color); }
 .part-card.part-v::before { background: var(--part-v-color); }
+.part-card.part-vi::before { background: var(--part-vi-color); }
 
 .part-card:hover {
   box-shadow: var(--shadow);
@@ -234,6 +235,7 @@
 .part-card:hover.part-iii { border-color: var(--part-iii-color); }
 .part-card:hover.part-iv { border-color: var(--part-iv-color); }
 .part-card:hover.part-v { border-color: var(--part-v-color); }
+.part-card:hover.part-vi { border-color: var(--part-vi-color); }
 
 .part-card-header {
   display: flex;
@@ -261,6 +263,7 @@
 .part-iii .part-card-num { background: var(--part-iii-color); }
 .part-iv .part-card-num { background: var(--part-iv-color); }
 .part-v .part-card-num { background: var(--part-v-color); }
+.part-vi .part-card-num { background: var(--part-vi-color); }
 
 .part-card-title {
   font-family: var(--font-display);
