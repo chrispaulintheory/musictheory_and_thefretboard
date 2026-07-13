@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1142" height="1026" viewBox="0 0 1142 1026" role="img" aria-labelledby="title desc">
+  <title id="title">82.4 Hz doubled to 164.8 Hz</title>
+  <desc id="desc">Two stacked waveforms. The upper blue wave is 164.8 Hz and completes twice as many cycles as the lower red 82.4 Hz wave.</desc>
+  <rect width="1142" height="1026" fill="#ffffff"/>
+
+  <g stroke="#d7d7d7" stroke-width="4" opacity="0.82">
+    <path d="M90 46V980 M326 46V980 M560 46V980 M794 46V980 M1029 46V980"/>
+    <path d="M52 90H1090 M52 229H1090 M52 369H1090 M52 508H1090 M52 648H1090 M52 788H1090 M52 928H1090"/>
+  </g>
+
+  <g fill="#111111" font-family="Noteworthy, 'Chalkboard SE', 'Comic Sans MS', cursive" font-weight="400">
+    <text x="134" y="61" font-size="44">164.8 Hz</text>
+    <text x="112" y="620" font-size="42">82.4 Hz × 2 = 164.8 Hz</text>
+  </g>
+
+  <path d="M52 307
+           C83 217 119 89 171 89
+           C230 89 284 369 349 369
+           C414 369 463 89 529 89
+           C594 89 641 369 706 369
+           C771 369 820 89 885 89
+           C950 89 1000 369 1060 369
+           C1072 369 1082 359 1090 348"
+        fill="none" stroke="#2537ee" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M52 828
+           C100 752 180 648 261 648
+           C391 648 486 928 617 928
+           C748 928 841 648 972 648
+           C1020 648 1060 680 1090 719"
+        fill="none" stroke="#ff1717" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
