@@ -30,6 +30,11 @@ SOURCE = ROOT / "Music-Theory-and-The-Fretboard-Level-1-1709264790.-htmlbook.htm
 ASSETS_IMG = ROOT / "assets" / "img"
 CHAPTERS_DIR = ROOT / "chapters"
 
+# Guitar-and-bass metadata is currently enabled only for the Level 1 learning
+# path. Instrument-specific applications are always printed together; there is
+# no interactive instrument preference.
+GUITAR_BASS_PART_IDS = frozenset({"part-basic-concepts", "part-main-body"})
+
 # ─── Chapter type detection ───────────────────────────────────────────────────
 
 def chapter_type(title: str) -> str:
@@ -432,7 +437,11 @@ GOOGLE_FONTS = (
 )
 
 
-def page_head(title: str, description: str, depth: str = "..") -> str:
+def page_head(
+    title: str,
+    description: str,
+    depth: str = "..",
+) -> str:
     """Generate the <head> block for a page."""
     return f"""  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -460,12 +469,17 @@ def generate_chapter_page(
     ch_id = chapter["id"]
     title = chapter["title"]
     ch_type = chapter.get("type", "misc")
+    part_id = chapter.get("part_id", "")
+    guitar_bass_enabled = part_id in GUITAR_BASS_PART_IDS
     part_title = chapter.get("part_info", {}).get("short", "")
     ch_num = chapter.get("number", "")
     num_label = f"Chapter {ch_num}" if ch_num else ""
 
     full_title = f"{title} — Music Theory and The Fretboard (Level 1)"
-    desc = f"Level 1 guitar theory and fretboard — {title}"
+    if guitar_bass_enabled:
+        desc = f"Level 1 guitar and bass theory and fretboard — {title}"
+    else:
+        desc = f"Level 1 guitar theory and fretboard — {title}"
 
     prev_link = ""
     if prev_ch:
@@ -504,7 +518,7 @@ def generate_chapter_page(
 <head>
 {page_head(full_title, desc, depth)}
 </head>
-<body class="chapter-page theme-{ch_type}" data-chapter-id="{ch_id}">
+<body class="chapter-page theme-{ch_type}" data-chapter-id="{ch_id}" data-part-id="{part_id}">
   <button class="drawer-toggle" id="drawer-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">
     <span class="hamburger"></span>
   </button>

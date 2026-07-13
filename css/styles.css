@@ -18,6 +18,8 @@
   --amber-mid: #D4892A;
   --amber-light: #F5E6C8;
   --amber-xlight: #FBF3E4;
+  --bass-accent: #24745F;
+  --bass-accent-light: #E3F2EC;
 
   /* Sidebar (dark wood) */
   --sidebar-bg: #201C18;
@@ -389,6 +391,31 @@ body {
 .bc-sep {
   margin: 0 var(--space-2);
   color: var(--ink-faint);
+}
+
+/* ─── Print-first guitar / bass applications ────────────────── */
+
+.instrument-variants {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.instrument-variant {
+  padding: var(--space-5);
+  border: 1px solid var(--paper-darker);
+  border-left: 4px solid var(--amber);
+  border-radius: var(--radius);
+  background: var(--amber-xlight);
+}
+
+.instrument-variant[data-instrument="bass"] {
+  border-left-color: var(--bass-accent);
+  background: var(--bass-accent-light);
+}
+
+.instrument-variant__title {
+  margin-top: 0 !important;
+  font-size: var(--text-lg) !important;
 }
 
 /* ─── Chapter header ─────────────────────────────────────────── */
@@ -1796,6 +1823,11 @@ body {
   a[href^="#"]::after, a[href^="../"]::after { content: ''; }
   body { font-size: 11pt; line-height: 1.5; color: black; background: white; }
   h1, h2, h3 { page-break-after: avoid; }
+  .instrument-variant {
+    break-inside: avoid;
+    box-shadow: none;
+    background: white;
+  }
 }
 
 /* ─── Scale degree chips ─────────────────────────────────────── */
