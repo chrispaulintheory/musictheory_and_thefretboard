@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">The complete Circle of Fifths and Fourths</title>
+  <desc id="desc">The major keys arranged in a circle. The sharp keys run clockwise from C through F sharp. The flat keys run counterclockwise from C through G flat. F sharp and G flat meet enharmonically at the bottom.</desc>
+  <defs>
+    <filter id="shadow-full" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#241F1A" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .display { font-family: Georgia, 'Times New Roman', serif; fill: #241F1A; }
+      .body { font-family: Arial, Helvetica, sans-serif; fill: #5A4E42; }
+      .key { font: 700 27px Georgia, 'Times New Roman', serif; fill: #241F1A; text-anchor: middle; }
+      .count-sharp { font: 700 15px Arial, Helvetica, sans-serif; fill: #B8741A; text-anchor: middle; }
+      .count-flat { font: 700 15px Arial, Helvetica, sans-serif; fill: #2564A8; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect x="8" y="8" width="884" height="884" rx="18" fill="#FBF7EF" stroke="#E8DEC8" stroke-width="2"/>
+  <text x="450" y="43" class="display" text-anchor="middle" font-size="28" font-weight="700">ONE CIRCLE, TWO DIRECTIONS</text>
+  <text x="450" y="69" class="body" text-anchor="middle" font-size="15">Major keys and their key signatures</text>
+
+  <path d="M 450 115 C 804 115 804 785 450 785" fill="none" stroke="#E7C996" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 450 115 C 96 115 96 785 450 785" fill="none" stroke="#BCD1E7" stroke-width="14" stroke-linecap="round"/>
+
+  <g transform="translate(450 450)">
+    <circle r="142" fill="#FFFDF8" stroke="#D8CCB9" stroke-width="2"/>
+    <text y="-47" class="display" text-anchor="middle" font-size="23" font-weight="700">CIRCLE OF FIFTHS</text>
+    <text y="-16" class="body" text-anchor="middle" font-size="16">clockwise</text>
+    <text y="9" class="body" text-anchor="middle" font-size="16" font-weight="700" fill="#B8741A">up a 5th • add a sharp</text>
+    <line x1="-92" y1="35" x2="92" y2="35" stroke="#D8CCB9"/>
+    <text y="68" class="display" text-anchor="middle" font-size="23" font-weight="700">CIRCLE OF FOURTHS</text>
+    <text y="96" class="body" text-anchor="middle" font-size="16" font-weight="700" fill="#2564A8">counterclockwise • add a flat</text>
+  </g>
+
+  <g filter="url(#shadow-full)">
+    <g transform="translate(450 115)"><circle r="48" fill="#FFFDF8" stroke="#8C7B6A" stroke-width="4"/><text y="-1" class="key">C</text><text y="23" class="body" text-anchor="middle" font-size="15" font-weight="700">0</text></g>
+
+    <g transform="translate(620 160)"><circle r="48" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">G</text><text y="23" class="count-sharp">1♯</text></g>
+    <g transform="translate(740 280)"><circle r="48" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">D</text><text y="23" class="count-sharp">2♯</text></g>
+    <g transform="translate(785 450)"><circle r="48" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">A</text><text y="23" class="count-sharp">3♯</text></g>
+    <g transform="translate(740 620)"><circle r="48" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">E</text><text y="23" class="count-sharp">4♯</text></g>
+    <g transform="translate(620 740)"><circle r="48" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">B</text><text y="23" class="count-sharp">5♯</text></g>
+
+    <g transform="translate(450 785)"><circle r="58" fill="#FFFDF8" stroke="#5A6F6B" stroke-width="5"/><text y="-7" class="key" font-size="23">F♯ / G♭</text><text y="21" class="body" text-anchor="middle" font-size="14" font-weight="700">6♯ / 6♭</text></g>
+
+    <g transform="translate(280 740)"><circle r="48" fill="#FFFDF8" stroke="#2564A8" stroke-width="4"/><text y="-1" class="key">D♭</text><text y="23" class="count-flat">5♭</text></g>
+    <g transform="translate(160 620)"><circle r="48" fill="#FFFDF8" stroke="#2564A8" stroke-width="4"/><text y="-1" class="key">A♭</text><text y="23" class="count-flat">4♭</text></g>
+    <g transform="translate(115 450)"><circle r="48" fill="#FFFDF8" stroke="#2564A8" stroke-width="4"/><text y="-1" class="key">E♭</text><text y="23" class="count-flat">3♭</text></g>
+    <g transform="translate(160 280)"><circle r="48" fill="#FFFDF8" stroke="#2564A8" stroke-width="4"/><text y="-1" class="key">B♭</text><text y="23" class="count-flat">2♭</text></g>
+    <g transform="translate(280 160)"><circle r="48" fill="#FFFDF8" stroke="#2564A8" stroke-width="4"/><text y="-1" class="key">F</text><text y="23" class="count-flat">1♭</text></g>
+  </g>
+
+  <text x="668" y="96" class="body" text-anchor="middle" font-size="14" font-weight="700" fill="#B8741A">SHARP SIDE</text>
+  <text x="232" y="96" class="body" text-anchor="middle" font-size="14" font-weight="700" fill="#2564A8">FLAT SIDE</text>
+</svg>

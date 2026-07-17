@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+  <title id="title">The sharp side of the Circle of Fifths</title>
+  <desc id="desc">C, G, D, A, E, B, and F sharp Major arranged clockwise from zero through six sharps. The unlearned left side is reserved for Level 2.</desc>
+  <defs>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#B8741A"/>
+    </marker>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#241F1A" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .display { font-family: Georgia, 'Times New Roman', serif; fill: #241F1A; }
+      .body { font-family: Arial, Helvetica, sans-serif; fill: #5A4E42; }
+      .key { font: 700 29px Georgia, 'Times New Roman', serif; fill: #241F1A; text-anchor: middle; }
+      .count { font: 600 15px Arial, Helvetica, sans-serif; fill: #B8741A; text-anchor: middle; letter-spacing: .02em; }
+    </style>
+  </defs>
+
+  <rect x="8" y="8" width="884" height="664" rx="18" fill="#FBF7EF" stroke="#E8DEC8" stroke-width="2"/>
+  <text x="450" y="48" class="display" text-anchor="middle" font-size="28" font-weight="700">THE SHARP SIDE</text>
+  <text x="450" y="75" class="body" text-anchor="middle" font-size="16">Every clockwise move rises a Perfect 5th and adds one sharp</text>
+
+  <path d="M 450 125 C 132 125 132 555 450 555" fill="none" stroke="#CFC4B3" stroke-width="5" stroke-dasharray="9 11"/>
+  <text x="176" y="324" class="body" text-anchor="middle" font-size="17" font-weight="700">COMPLETE IN</text>
+  <text x="176" y="348" class="body" text-anchor="middle" font-size="17" font-weight="700">LEVEL 2</text>
+
+  <path d="M 450 125 C 768 125 768 555 450 555" fill="none" stroke="#E7C996" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 506 130 C 724 175 754 438 548 535" fill="none" stroke="#B8741A" stroke-width="3.5" marker-end="url(#arrow-amber)"/>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(450 125)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">C</text><text y="23" class="count">0 sharps</text></g>
+    <g transform="translate(590 158)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">G</text><text y="23" class="count">1 sharp</text></g>
+    <g transform="translate(690 250)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">D</text><text y="23" class="count">2 sharps</text></g>
+    <g transform="translate(725 340)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">A</text><text y="23" class="count">3 sharps</text></g>
+    <g transform="translate(690 430)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">E</text><text y="23" class="count">4 sharps</text></g>
+    <g transform="translate(590 522)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">B</text><text y="23" class="count">5 sharps</text></g>
+    <g transform="translate(450 555)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">F♯</text><text y="23" class="count">6 sharps</text></g>
+  </g>
+
+  <rect x="278" y="605" width="344" height="42" rx="21" fill="#FBF0DC" stroke="#E7C996"/>
+  <text x="450" y="631" class="body" text-anchor="middle" font-size="15" font-weight="700">Reverse direction: up a Perfect 4th</text>
+</svg>

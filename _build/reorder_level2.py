@@ -119,6 +119,12 @@ ORDER = [
     ("chapter-level-2-the-fretboard-the-f-major-scale.html",
      "The Fretboard: The F Major Scale",
      "The Fretboard: The F Major Scale"),
+    ("chapter-level-2-music-theory-completing-the-circle-of-fifths.html",
+     "Music Theory: Completing the Circle of Fifths",
+     "Music Theory: Completing the Circle of Fifths"),
+    ("chapter-level-2-music-theory-the-augmented-triad.html",
+     "Music Theory: The Augmented Triad",
+     "Music Theory: The Augmented Triad"),
     ("chapter-level-2-musical-application-open-position-melody-over-i-vi-iv-v.html",
      "Musical Application: Open-Position Melody over I-vi-IV-V",
      "Musical Application: Open-Position Melody over I-vi-IV-V"),
@@ -147,7 +153,8 @@ ORDER = [
 
 # Boundaries: chapter immediately before the first Level 2 chapter, and after the last.
 BOUNDARY_PREV = ("chapter-ti-and-the-major-scale.html", "Ti and The Major Scale")
-BOUNDARY_NEXT = ("back-matter-appendix.html", "Appendix")
+BOUNDARY_NEXT = ("chapter-level-3-why-melody-comes-before-more-theory.html",
+                 "Why Melody Comes Before More Theory")
 
 FILES = {f for f, _, _ in ORDER}
 INDEX_BY_FILE = {f: i for i, (f, _, _) in enumerate(ORDER)}

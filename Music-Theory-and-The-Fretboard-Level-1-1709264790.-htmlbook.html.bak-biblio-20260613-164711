@@ -314,7 +314,7 @@ lang="en">
          </header>
          <p>Let&#8217;s name some notes. The first Major scale to learn is the C Major scale. We use letters of the alphabet to name notes. And since there are only 7 notes in a Major scale, we are only going to use 7 letters. However, our first letter is C. So the 7 letters we use to name notes in music are C, D, E, F, G, A, and B. As you can see, when we get to G, we loop back to A.</p>
          <p>When writing or playing scales, we like to play the tonic (the first note of the scale) again to provide a sense of completeness. Therefore, the C Major scale would be played as C–D–E–F–G–A–B–C.</p>
-         <p>Remember that the generic Major Scale pattern (in theory) looks like this. The numbered notes are called &#8220;scale degrees&#8221;. In college-level textbooks, they will have a caret above each number: 1̂, 2̂, 3̂, etc.</p>
+         <p>Remember that the generic Major Scale pattern (in theory) looks like this. The numbered notes are called &#8220;scale degrees&#8221;. In college-level textbooks, they will have a caret above each number: 1&#x0302;, 2&#x0302;, 3&#x0302;, etc.</p>
          <p><img class="wp-image-180 aligncenter" src="major-scale-pattern-rainbow-1.png" alt="" width="699" height="59" srcset="major-scale-pattern-rainbow-1.png 1457w, major-scale-pattern-rainbow-1-300x25.png 300w, major-scale-pattern-rainbow-1-1024x86.png 1024w, major-scale-pattern-rainbow-1-768x65.png 768w, major-scale-pattern-rainbow-1-65x5.png 65w, major-scale-pattern-rainbow-1-225x19.png 225w, major-scale-pattern-rainbow-1-350x30.png 350w" sizes="(max-width: 699px) 100vw, 699px" /></p>
          <p>Again, there will always be a half step between the 3rd note and the 4th note of the scale. Notice how &#8220;3&#8221; and &#8220;4&#8221; are right next to each other? Additionally, there is a half step when going from the 7th note of the scale to the 1st note (at a &#8220;lighter shade&#8221;) again.</p>
          <p>With that in mind, when we apply the names to the notes (starting with C)&#8230;</p>
@@ -334,7 +334,7 @@ lang="en">
          </header>
          <h1 style="text-align: left">The C Major Scale on One String</h1>
          <p><img class="aligncenter wp-image-1293" src="Screenshot-2024-02-02-at-2.47.56 PM-1024x249.png" alt="" width="600" height="146" srcset="Screenshot-2024-02-02-at-2.47.56 PM-1024x249.png 1024w, Screenshot-2024-02-02-at-2.47.56 PM-300x73.png 300w, Screenshot-2024-02-02-at-2.47.56 PM-768x187.png 768w, Screenshot-2024-02-02-at-2.47.56 PM-65x16.png 65w, Screenshot-2024-02-02-at-2.47.56 PM-225x55.png 225w, Screenshot-2024-02-02-at-2.47.56 PM-350x85.png 350w, Screenshot-2024-02-02-at-2.47.56 PM.png 1424w" sizes="(max-width: 600px) 100vw, 600px" /></p>
-         <p>In this piece of music, I include the scale degrees (the numbers with the carets above them) in between the standard notation and the tab. It’s acceptable to call the last scale degree in the scale 8̂ or 1̂.</p>
+         <p>In this piece of music, I include the scale degrees (the numbers with the carets above them) in between the standard notation and the tab. It’s acceptable to call the last scale degree in the scale 8&#x0302; or 1&#x0302;.</p>
          <h1>Building The Fretboard</h1>
          <p>In music, notes in a scale continue on in both directions beyond both C’s. So we’re going to take the scale…</p>
          <p><img class="wp-image-182 aligncenter" src="c-major-scale-rainbow-300-1.png" alt="" width="701" height="63" srcset="c-major-scale-rainbow-300-1.png 5951w, c-major-scale-rainbow-300-1-300x27.png 300w, c-major-scale-rainbow-300-1-1024x92.png 1024w, c-major-scale-rainbow-300-1-768x69.png 768w, c-major-scale-rainbow-300-1-1536x138.png 1536w, c-major-scale-rainbow-300-1-2048x184.png 2048w, c-major-scale-rainbow-300-1-65x6.png 65w, c-major-scale-rainbow-300-1-225x20.png 225w, c-major-scale-rainbow-300-1-350x31.png 350w" sizes="(max-width: 701px) 100vw, 701px" /></p>
@@ -568,13 +568,13 @@ lang="en">
                    </tr>
                    <tr style="height: 14px">
                         <td style="width: 20.047169811320757%;text-align: right;height: 14px">Scale Degrees ➡</td>
-                        <td style="width: 9.059378468368479%;height: 14px">1̂</td>
-                        <td style="width: 11.834073251942286%;height: 14px">2̂</td>
-                        <td style="width: 12.167036625971143%;height: 14px">3̂</td>
-                        <td style="width: 12.389012208657046%;height: 14px">4̂</td>
-                        <td style="width: 12.94395116537181%;height: 14px">5̂</td>
-                        <td style="width: 11.612097669256382%;height: 14px">6̂</td>
-                        <td style="width: 9.947280799112097%;height: 14px">7̂</td>
+                        <td style="width: 9.059378468368479%;height: 14px">1&#x0302;</td>
+                        <td style="width: 11.834073251942286%;height: 14px">2&#x0302;</td>
+                        <td style="width: 12.167036625971143%;height: 14px">3&#x0302;</td>
+                        <td style="width: 12.389012208657046%;height: 14px">4&#x0302;</td>
+                        <td style="width: 12.94395116537181%;height: 14px">5&#x0302;</td>
+                        <td style="width: 11.612097669256382%;height: 14px">6&#x0302;</td>
+                        <td style="width: 9.947280799112097%;height: 14px">7&#x0302;</td>
                    </tr>
               </tbody>
          </table>
@@ -641,23 +641,23 @@ lang="en">
                    </tr>
                    <tr>
                         <td style="width: 12.5%;text-align: center">5</td>
-                        <td style="width: 12.5%">G (5̂)</td>
-                        <td style="width: 12.5%">A (6̂)</td>
-                        <td style="width: 12.5%">B (7̂)</td>
-                        <td style="width: 12.5%">C (1̂)</td>
-                        <td style="width: 12.5%">D (2̂)</td>
-                        <td style="width: 12.5%">E (3̂)</td>
-                        <td style="width: 12.5%">F (4̂)</td>
+                        <td style="width: 12.5%">G (5&#x0302;)</td>
+                        <td style="width: 12.5%">A (6&#x0302;)</td>
+                        <td style="width: 12.5%">B (7&#x0302;)</td>
+                        <td style="width: 12.5%">C (1&#x0302;)</td>
+                        <td style="width: 12.5%">D (2&#x0302;)</td>
+                        <td style="width: 12.5%">E (3&#x0302;)</td>
+                        <td style="width: 12.5%">F (4&#x0302;)</td>
                    </tr>
                    <tr>
                         <td style="width: 12.5%;text-align: center">1</td>
-                        <td style="width: 12.5%">C (1̂)</td>
-                        <td style="width: 12.5%">D (2̂)</td>
-                        <td style="width: 12.5%">E (3̂)</td>
-                        <td style="width: 12.5%">F (4̂)</td>
-                        <td style="width: 12.5%">G (5̂)</td>
-                        <td style="width: 12.5%">A (6̂)</td>
-                        <td style="width: 12.5%">B (7̂)</td>
+                        <td style="width: 12.5%">C (1&#x0302;)</td>
+                        <td style="width: 12.5%">D (2&#x0302;)</td>
+                        <td style="width: 12.5%">E (3&#x0302;)</td>
+                        <td style="width: 12.5%">F (4&#x0302;)</td>
+                        <td style="width: 12.5%">G (5&#x0302;)</td>
+                        <td style="width: 12.5%">A (6&#x0302;)</td>
+                        <td style="width: 12.5%">B (7&#x0302;)</td>
                    </tr>
                    <tr>
                         <td style="width: 12.5%"></td>
@@ -952,14 +952,14 @@ lang="en">
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">A</span></td>
                    </tr>
                    <tr>
-                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">1̂</span></td>
+                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">1&#x0302;</span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
-                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">8̂ (1̂)</span></td>
+                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">8&#x0302; (1&#x0302;)</span></td>
                    </tr>
               </tbody>
          </table>
@@ -979,14 +979,14 @@ lang="en">
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">E</span></td>
                    </tr>
                    <tr>
-                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">1̂</span></td>
+                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">1&#x0302;</span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
-                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">8̂ (1̂)</span></td>
+                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">8&#x0302; (1&#x0302;)</span></td>
                    </tr>
               </tbody>
          </table>
@@ -1023,14 +1023,14 @@ lang="en">
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">B</span></td>
                    </tr>
                    <tr>
-                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">1̂</span></td>
+                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">1&#x0302;</span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
-                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">8̂ (1̂)</span></td>
+                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">8&#x0302; (1&#x0302;)</span></td>
                    </tr>
               </tbody>
          </table>
@@ -1048,14 +1048,14 @@ lang="en">
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">F♯</span></td>
                    </tr>
                    <tr>
-                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">1̂</span></td>
+                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">1&#x0302;</span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
                         <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">    </span></td>
-                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">8̂ (1̂)</span></td>
+                        <td style="width: 12.5%;text-align: center"><span style="text-decoration: underline">8&#x0302; (1&#x0302;)</span></td>
                    </tr>
               </tbody>
          </table>
