@@ -124,12 +124,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Keep musical flats optically attached to their note letter. site.js adds
-   this wrapper automatically to every flat in chapter content. */
+/* Normalize musical accidental positioning. site.js adds these wrappers
+   automatically to flats and sharps in chapter content. */
 .accidental-flat {
   display: inline-block;
   margin-left: -0.28em;
   margin-right: -0.18em;
+}
+
+.accidental-sharp {
+  display: inline-block;
+  position: relative;
+  top: -0.1em;
 }
 
 /* ─── Layout: Sidebar + Content ──────────────────────────────── */

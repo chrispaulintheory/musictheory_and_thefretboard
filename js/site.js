@@ -5,33 +5,35 @@
 
   // ─── Musical accidentals ───────────────────────────────────────────
 
-  // Newsreader does not supply the flat glyph in every browser, so a
-  // fallback font can give it an overly wide left side-bearing. Wrap every
-  // flat in chapter content so CSS can correct the spacing consistently.
+  // Newsreader does not supply every accidental glyph in every browser, so
+  // fallback fonts can introduce inconsistent positioning. Wrap flats and
+  // sharps in chapter content so CSS can correct them consistently.
   var content = document.querySelector('.content');
   if (content) {
-    var flatWalker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
-    var flatNodes = [];
-    var flatNode;
+    var accidentalWalker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
+    var accidentalNodes = [];
+    var accidentalNode;
 
-    while ((flatNode = flatWalker.nextNode())) {
-      if (flatNode.nodeValue.indexOf('♭') !== -1 &&
-          !flatNode.parentElement.closest('.accidental, script, style, svg')) {
-        flatNodes.push(flatNode);
+    while ((accidentalNode = accidentalWalker.nextNode())) {
+      if (/[♭♯]/.test(accidentalNode.nodeValue) &&
+          !accidentalNode.parentElement.closest('.accidental, script, style, svg')) {
+        accidentalNodes.push(accidentalNode);
       }
     }
 
-    flatNodes.forEach(function (textNode) {
+    accidentalNodes.forEach(function (textNode) {
       var fragment = document.createDocumentFragment();
-      var parts = textNode.nodeValue.split('♭');
+      var parts = textNode.nodeValue.split(/([♭♯])/g);
 
-      parts.forEach(function (part, index) {
-        if (part) fragment.appendChild(document.createTextNode(part));
-        if (index < parts.length - 1) {
+      parts.forEach(function (part) {
+        if (part === '♭' || part === '♯') {
           var accidental = document.createElement('span');
-          accidental.className = 'accidental accidental-flat';
-          accidental.textContent = '♭';
+          accidental.className = 'accidental accidental-' +
+            (part === '♭' ? 'flat' : 'sharp');
+          accidental.textContent = part;
           fragment.appendChild(accidental);
+        } else if (part) {
+          fragment.appendChild(document.createTextNode(part));
         }
       });
 
