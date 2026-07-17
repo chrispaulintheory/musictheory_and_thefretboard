@@ -3,6 +3,42 @@
 (function () {
   'use strict';
 
+  // ─── Musical accidentals ───────────────────────────────────────────
+
+  // Newsreader does not supply the flat glyph in every browser, so a
+  // fallback font can give it an overly wide left side-bearing. Wrap every
+  // flat in chapter content so CSS can correct the spacing consistently.
+  var content = document.querySelector('.content');
+  if (content) {
+    var flatWalker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
+    var flatNodes = [];
+    var flatNode;
+
+    while ((flatNode = flatWalker.nextNode())) {
+      if (flatNode.nodeValue.indexOf('♭') !== -1 &&
+          !flatNode.parentElement.closest('.accidental, script, style, svg')) {
+        flatNodes.push(flatNode);
+      }
+    }
+
+    flatNodes.forEach(function (textNode) {
+      var fragment = document.createDocumentFragment();
+      var parts = textNode.nodeValue.split('♭');
+
+      parts.forEach(function (part, index) {
+        if (part) fragment.appendChild(document.createTextNode(part));
+        if (index < parts.length - 1) {
+          var accidental = document.createElement('span');
+          accidental.className = 'accidental accidental-flat';
+          accidental.textContent = '♭';
+          fragment.appendChild(accidental);
+        }
+      });
+
+      textNode.parentNode.replaceChild(fragment, textNode);
+    });
+  }
+
   // ─── Mobile drawer ───────────────────────────────────────────
 
   var sidebar = document.getElementById('sidebar');
