@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Normalize the Level 1 tail after inserting Chapter 31, "The Sharp Side of the
-Circle of Fifths."  Chapter HTML files are intentionally edited in place; the
+Normalize the Level 1 tail after inserting Chapter 31, "Music Theory:
+Introducing the Circle of Fifths."  Chapter HTML files are intentionally edited in place; the
 HTMLBook is not touched.
 
 The sidebar table of contents is duplicated in every full chapter page, so the
@@ -37,7 +37,7 @@ LEVEL1_CORE = [
     ("chapter-music-theory-key-of-d-two-sharps.html", "Music Theory: Key of D (two sharps)", "ch-theory", 28),
     ("chapter-the-fretboard-the-d-major-scale.html", "The Fretboard: The D Major Scale and Power Chords in the Key of D", "ch-fretboard", 29),
     ("chapter-music-theory-exercises-scale-building.html", "Music Theory Exercises: Building the A, E, B, and F♯ Major Scales", "ch-theory", 30),
-    ("chapter-music-theory-the-sharp-side-of-the-circle-of-fifths.html", "Music Theory: The Sharp Side of the Circle of Fifths", "ch-theory", 31),
+    ("chapter-music-theory-the-sharp-side-of-the-circle-of-fifths.html", "Music Theory: Introducing the Circle of Fifths", "ch-theory", 31),
 ]
 
 STANDARD_NOTATION = [

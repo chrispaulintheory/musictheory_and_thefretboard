@@ -28,13 +28,13 @@
   <path d="M 506 130 C 724 175 754 438 548 535" fill="none" stroke="#B8741A" stroke-width="3.5" marker-end="url(#arrow-amber)"/>
 
   <g filter="url(#shadow)">
-    <g transform="translate(450 125)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">C</text><text y="23" class="count">0 sharps</text></g>
-    <g transform="translate(590 158)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">G</text><text y="23" class="count">1 sharp</text></g>
-    <g transform="translate(690 250)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">D</text><text y="23" class="count">2 sharps</text></g>
-    <g transform="translate(725 340)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">A</text><text y="23" class="count">3 sharps</text></g>
-    <g transform="translate(690 430)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">E</text><text y="23" class="count">4 sharps</text></g>
-    <g transform="translate(590 522)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">B</text><text y="23" class="count">5 sharps</text></g>
-    <g transform="translate(450 555)"><circle r="49" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">F♯</text><text y="23" class="count">6 sharps</text></g>
+    <g transform="translate(450 125)"><circle r="44" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">C</text><text y="23" class="count">0 sharps</text></g>
+    <g transform="translate(590 158)"><circle r="44" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">G</text><text y="23" class="count">1 sharp</text></g>
+    <g transform="translate(690 250)"><circle r="44" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">D</text><text y="23" class="count">2 sharps</text></g>
+    <g transform="translate(725 340)"><circle r="44" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">A</text><text y="23" class="count">3 sharps</text></g>
+    <g transform="translate(690 430)"><circle r="44" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">E</text><text y="23" class="count">4 sharps</text></g>
+    <g transform="translate(590 522)"><circle r="44" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">B</text><text y="23" class="count">5 sharps</text></g>
+    <g transform="translate(450 555)"><circle r="44" fill="#FFFDF8" stroke="#B8741A" stroke-width="4"/><text y="-1" class="key">F♯</text><text y="23" class="count">6 sharps</text></g>
   </g>
 
   <rect x="278" y="605" width="344" height="42" rx="21" fill="#FBF0DC" stroke="#E7C996"/>
