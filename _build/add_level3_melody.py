@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Add the Level 3 Melody First draft chapters to the current static site.
 
-This intentionally does not run generate.py because the HTMLBook source is behind
-the current hand-maintained Level 2 chapter files.
+The generated chapter files are written directly into the authoritative
+``web/chapters`` collection.
 """
 
 from __future__ import annotations

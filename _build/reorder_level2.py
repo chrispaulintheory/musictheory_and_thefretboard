@@ -167,7 +167,7 @@ def sidebar_ol(active_file):
         lines.append(f'      <li class="{cls}">')
         lines.append(f'        <a href="../chapters/{f}"><span class="ch-num">{i}</span>{side}</a>')
         lines.append('      </li>')
-    return "\n" + "\n".join(lines) + "\n    "
+    return "\n" + "\n".join(lines)
 
 
 def prev_next_block(idx):
@@ -200,7 +200,9 @@ def process_chapter(path):
 
     # 1. Rewrite the Level 2 sidebar block (every chapter page carries it).
     active = f if f in FILES else None
-    new_s, n = PARTV_RE.subn(lambda m: m.group(1) + sidebar_ol(active) + m.group(3), s)
+    new_s, n = PARTV_RE.subn(
+        lambda m: m.group(1) + sidebar_ol(active) + "\n    </ol>", s
+    )
     if n != 1:
         raise SystemExit(f"part-v sidebar not found (or multiple) in {f}: {n}")
     s = new_s

@@ -54,39 +54,6 @@ Do not make separate diagrams merely because a figure shows six strings.
 
 ## Updating the current static site
 
-Do not run `generate.py` blindly: the HTMLBook trails the hand-maintained Level
-2/3 pages and navigation. Apply the print-first shell cleanup to current output
-with:
-
-```bash
-cd web
-/opt/homebrew/bin/uv run --with beautifulsoup4 --with lxml \
-  _build/apply_instrument_presentation.py
-```
-
-Verify that no retired selector/preference markup remains and all Guitar/Bass
-applications are visible:
-
-```bash
-cd web
-/opt/homebrew/bin/uv run --with beautifulsoup4 --with lxml \
-  _build/apply_instrument_presentation.py --check
-```
-
-After editing Basic Concepts content in the HTMLBook, publish only Chapters
-1–8 without disturbing the hand-maintained later-level navigation:
-
-```bash
-cd web
-/opt/homebrew/bin/uv run --with beautifulsoup4 --with lxml \
-  _build/apply_basic_concepts_bass.py
-```
-
-Verify that those eight generated bodies still match the HTMLBook and that the
-neutral Chapter 5 title is consistent throughout published navigation:
-
-```bash
-cd web
-/opt/homebrew/bin/uv run --with beautifulsoup4 --with lxml \
-  _build/apply_basic_concepts_bass.py --check
-```
+Edit the authoritative files in `web/chapters/` directly. Keep shared theory
+outside instrument wrappers and verify that all Guitar/Bass applications remain
+visible on screen and in print. Run `_build/qa_check.py` after changes.

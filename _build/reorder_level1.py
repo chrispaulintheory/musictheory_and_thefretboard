@@ -90,7 +90,7 @@ def sidebar_items(entries, active_file):
             f'        <a href="../chapters/{filename}"><span class="ch-num">{number}</span>{title}</a>',
             '      </li>',
         ])
-    return "\n" + "\n".join(lines) + "\n    "
+    return "\n" + "\n".join(lines)
 
 
 def replace_part(text, part_class, entries, active_file):
@@ -99,7 +99,7 @@ def replace_part(text, part_class, entries, active_file):
         re.DOTALL,
     )
     return pattern.sub(
-        lambda m: m.group(1) + sidebar_items(entries, active_file) + m.group(3),
+        lambda m: m.group(1) + sidebar_items(entries, active_file) + "\n    </ol>",
         text,
         count=1,
     )
